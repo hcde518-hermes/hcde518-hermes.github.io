@@ -4,7 +4,7 @@ body {
 .dialog_container {
     position: fixed;
     margin: auto;
-    top: 200px;
+    top: 25%;
     right: 0;
     left: 0;
     height: 300px;

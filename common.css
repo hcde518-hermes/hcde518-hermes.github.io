@@ -10,9 +10,16 @@ body {
     height: 300px;
     max-width: 500px;
     width: 100%;
-    border-radius: 10px;
     box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
     background-color: white;
+}
+.top_strip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background-color: rgb(179, 136, 255);
 }
 .question_container {
     margin-top: 10%;

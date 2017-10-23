@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="common.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-deep_purple.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 <body>
+    <div class="formBannerBackground"></div>
     <div class="dialog_container">
-        <div class="question_container">Are you a...</div>
-        <br>
+        <div class="question_container">Welcome</div>
+        <div class="description_container">
+            [Insert description about what we are doing, why we're cool, and what to do from here]
+        </div>
         <div class="button_container">
-            <button>Employee</button>
-            <button>Manager</button>
-            <button>Other</button>
+            <button class="redirect_button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href = '[Insert link to employee form]';">Employee</button>
+            <button class="redirect_button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href = '[Insert link to manager form]';">Manager</button>
+            <button class="redirect_button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href = '[Insert link to freelancer form or something]';">Freelancer</button>
         </div>
     </div>
 </body>

@@ -2,25 +2,6 @@
 
 <dom-module id="landing-module">
     <template>
-        <div class="fb-customerchat" page_id="368569350251252" minimized="false"> </div>
-        <script>
-          window.fbAsyncInit = function() {
-            FB.init({
-              appId            : '123490661664109',
-              autoLogAppEvents : true,
-              xfbml            : true,
-              version          : 'v2.11'
-            });
-          };
-
-          (function(d, s, id){
-             var js, fjs = d.getElementsByTagName(s)[0];
-             if (d.getElementById(id)) {return;}
-             js = d.createElement(s); js.id = id;
-             js.src = "https://connect.facebook.net/en_US/sdk.js";
-             fjs.parentNode.insertBefore(js, fjs);
-           }(document, 'script', 'facebook-jssdk'));
-        </script>
         <app-drawer-layout drawer-width="288px" responsiveWidth="1280px" narrow="{{narrow}}">
             <app-drawer id="main_drawer" slot="drawer">
                 <app-header-layout has-scrolling-region>

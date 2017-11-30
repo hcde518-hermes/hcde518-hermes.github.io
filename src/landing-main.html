@@ -1,0 +1,58 @@
+<link rel="import" href="../bower_components/app-layout/app-layout.html">
+<link rel="import" href="../bower_components/app-layout/app-toolbar/app-toolbar.html">
+<link rel="import" href="../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../bower_components/paper-listbox/paper-listbox.html">
+
+<link rel="import" href="landing-detail.html">
+
+<dom-module id="landing-main">
+    <template>
+        <style>
+        app-drawer-layout:not([narrow]) [drawer-toggle] {
+            display: none;
+        }
+        paper-item {
+            height: 54px;
+        }
+        paper-item > a {
+            width: 100%;
+            height: 100%;
+            line-height: 54px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+        }
+        </style>
+        <app-drawer-layout responsiveWidth="1280px">
+            <app-drawer id="drawer" slot="drawer">
+                <app-header-layout has-scrolling-region>
+                    <app-header fixed slot="header">
+                        <app-toolbar />
+                        <app-toolbar class="title-toolbar nav-title-toolbar"/>
+                    </app-header>
+
+                    <paper-listbox selected="" attr-for-selected="name" on-iron-activate="">
+                        <paper-item name="home">
+                            <a href="#/home" name="name">Home</a>
+                        </paper-item>
+                        <paper-item name="about">
+                            <a href="#/about" name="name">About</a>
+                        </paper-item>
+                        <paper-item name="process">
+                            <a href="#/process" name="name">Process</a>
+                        </paper-item>
+                    </paper-listbox>
+                </app-header-layout>
+            </app-drawer>
+
+            <iron-pages selected="[[_selectedPage]]" attr-for-selected="name">
+
+            </iron-pages>
+        </app-drawer-layout>
+    </template>
+    <script>
+        Polymer({
+            is: 'landing-main'
+        });
+    </script>
+</dom-module>

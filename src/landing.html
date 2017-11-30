@@ -1,0 +1,22 @@
+<link rel="import" href="../bower_components/app-layout/app-layout.html">
+
+<dom-module id="landing-module">
+    <template>
+        <app-drawer-layout drawer-width="288px" responsiveWidth="1280px" narrow="{{narrow}}">
+            <app-drawer id="main_drawer" slot="drawer">
+                <app-header-layout has-scrolling-region>
+                    <app-header fixed slot="header">
+                        <app-toolbar />
+                        <app-toolbar class="title-toolbar nav-title-toolbar">
+                            <div class="title">Meow</div>
+                        </app-toolbar>
+                    </app-header>
+            </app-drawer>
+        </app-drawer-layout>
+    </template>
+    <script>
+        Polymer({
+            is: 'landing-module'
+        });
+    </script>
+</dom-module>
